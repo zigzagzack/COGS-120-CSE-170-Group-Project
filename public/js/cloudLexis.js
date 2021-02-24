@@ -14,12 +14,13 @@ $(".words button").click(changeWordColor);
 
 /*
 function customToggle(){
-    $("#customList").css("display","none");
+    $(".customList").css("display","none");
 }
-$("#customList").toggle;
-*/
+$(".customList").click(customToggle);
+
 
 $("button #word9").click(function(){
   $("ul#customList").toggle();
 })
+*/
 

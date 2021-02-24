@@ -34,7 +34,7 @@
   line-height: 21px;
   /* identical to box height */
   letter-spacing: -0.04em;
-  color: #516968;
+  color: #555B6E;
   text-align: center;
   background: #BEE3DB;
   border-radius: 4px;
@@ -54,6 +54,24 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.customList{
+  /*display: none;*/
+  width: 105px;
+  height: 123px;
+  background: #BEE3DB;
+  border: 1px solid rgba(81, 105, 104, 0.58);
+  box-sizing: border-box;  
+  text-indent: 10%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+  color: #555B6E;
 }
 
 .home-button{
