@@ -26,17 +26,25 @@
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.word {
-  font-size: 16px;
+.words button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+  color: #555B6E;
   text-align: center;
-  overflow: hidden;
-  border: 2px solid black;
-  border-radius: 50px;
+  background: #BEE3DB;
+  border-radius: 4px;
   margin-left: 22%;
   margin-right: 22%;
+  margin-top: 22%;
+  margin-bottom: 22%;
   padding-top: 30px;
-  height: 40px;
-  width: 60%;
+  height: 150px;
+  width: 150px;
 }
 
 .page2-b1{
@@ -46,6 +54,24 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.customList{
+  /*display: none;*/
+  width: 105px;
+  height: 123px;
+  background: #BEE3DB;
+  border: 1px solid rgba(81, 105, 104, 0.58);
+  box-sizing: border-box;  
+  text-indent: 10%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+  color: #555B6E;
 }
 
 .home-button{
