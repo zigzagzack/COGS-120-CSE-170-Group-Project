@@ -47,6 +47,33 @@
   width: 150px;
 }
 
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  width: 105px;
+  height: 123px;
+  background: #BEE3DB;
+  border: 1px solid rgba(81, 105, 104, 0.58);
+  box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FFC2AA;}
+
 .page2-b1{
   margin: 0;
   position: absolute;
@@ -54,24 +81,6 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.customList{
-  /*display: none;*/
-  width: 105px;
-  height: 123px;
-  background: #BEE3DB;
-  border: 1px solid rgba(81, 105, 104, 0.58);
-  box-sizing: border-box;  
-  text-indent: 10%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
-  letter-spacing: -0.04em;
-  color: #555B6E;
 }
 
 .home-button{
