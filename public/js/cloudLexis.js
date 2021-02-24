@@ -1,13 +1,25 @@
 var clickCount = 0;
 function changeWordColor(){
   if (clickCount%2 == 0){
-    $( "p.word" ).css("background-color", "#FFC2AA");
+    $( ".words button" ).css("background", "#FFC2AA");
     clickCount += 1;
   }
   else if (clickCount%2 == 1){
-    $( "p.word" ).css("background-color", "#BEE3DB");
+    $( ".words button" ).css("background", "#BEE3DB");
     clickCount += 1;
   }
 }
 
-$("p.word").click(changeWordColor);
+$(".words button").click(changeWordColor);
+
+/*
+function customToggle(){
+    $("#customList").css("display","none");
+}
+$("#customList").toggle;
+*/
+
+$("button #word9").click(function(){
+  $("ul#customList").toggle();
+})
+

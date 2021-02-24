@@ -26,7 +26,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.word {
+.words button {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -36,14 +36,15 @@
   letter-spacing: -0.04em;
   color: #516968;
   text-align: center;
-  overflow: hidden;
   background: #BEE3DB;
   border-radius: 4px;
   margin-left: 22%;
   margin-right: 22%;
+  margin-top: 22%;
+  margin-bottom: 22%;
   padding-top: 30px;
-  height: 40px;
-  width: 60%;
+  height: 150px;
+  width: 150px;
 }
 
 .page2-b1{
