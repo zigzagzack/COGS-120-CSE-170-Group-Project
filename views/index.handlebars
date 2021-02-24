@@ -2,14 +2,23 @@
 <head>
 	<title>Cloud Lexis</title>
 	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/wordcloud2.js"></script>
 </head>
 <body>
 	<p class="app-title"> Cloud Lexis </p>
+	<br><br><br>
 	<div class="page1-b1">
-		<a href="entry"><button>New Entry</button></a>
-	</div>
-	<div class="page1-b2">
-		<a href="result"><button>Looking Back</button></a>
+		<form>
+			<label for="fname">Name:</label><br>
+  		<input type="text" id="fname" class = "textbox" name="fname"><br>
+			<label for="password">Password:</label><br>
+  		<input type="text" id="password" class = "textbox" name="password"><br>
+		</form>
+		<br>
+		<div class="side-by-side">
+			<a href="home"><button>Log In</button></a>
+			<a href="home"><button>Sign Up</button></a>
+		</div>
 	</div>
 </body>
 </html>
