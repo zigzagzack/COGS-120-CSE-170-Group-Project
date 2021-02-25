@@ -32,7 +32,7 @@ var clickCount2 = 0;
 function changeWordColor2(){
   if (clickCount2%2 == 0){
     $( "button#word2" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount2 += 1;
   }
   else if (clickCount2%2 == 1){
     $( "button#word2" ).css("background", "#BEE3DB");
@@ -100,7 +100,7 @@ $("button#word6").click(changeWordColor6);
 
 var clickCount7 = 0;
 function changeWordColor7(){
-  if (clickCoun7%2 == 0){
+  if (clickCount7%2 == 0){
     $( "button#word7" ).css("background", "#FFC2AA");
     clickCount7 += 1;
   }
