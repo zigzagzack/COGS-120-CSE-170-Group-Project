@@ -158,6 +158,20 @@ function changeWordColor8(){
 
 $("button#word8").click(changeWordColor8);
 
+var clickCount9 = 0;
+function changeWordColor9(){
+  if (clickCount9%2 == 0){
+    $( "button#word8" ).css("background", "#FFC2AA");
+    clickCount9 += 1;
+  }
+  else if (clickCount9%2 == 1){
+    $( "button#word8" ).css("background", "#BEE3DB");
+    clickCount9 += 1;
+  }
+}
+
+$("button#word").click(changeWordColor8);
+
 let addbtn = document.querySelector('.userinput button');
 let input = document.querySelector('input');
 let select = document.querySelector('select');

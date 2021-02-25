@@ -63,7 +63,7 @@
   letter-spacing: -0.04em;
   color: #555B6E;
   width: 150px;
-  height: 100px;
+  height: 150px;
   background: #BEE3DB;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
@@ -79,14 +79,13 @@
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #555B6E;
-  width: 100px;
-  height: 26px;
   background: #FAF9F9;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
   padding: 5px;
-  margin: 5px;
-  position: absolute;
+  margin: 10px;
+  width: 130px;
+  height: 26px;
 }
 
 .userinput button{
@@ -98,14 +97,13 @@
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #555B6E;
-  width: 30px;
-  height: 26px;
-  background: #FAF9F9;
+  background: #FFC2AA;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
   padding: 5px;
-  margin-left: 110px;
-  display: inline-block;
+  margin: 10px;
+  width: 130px;
+  height: 26px;
 }
 
 select{
@@ -118,8 +116,9 @@ select{
   letter-spacing: -0.04em;
   color: #555B6E;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
   width: 130px;
+  height: 26px;
 }
 
 .dropdown:hover .customlist {display: block;}
