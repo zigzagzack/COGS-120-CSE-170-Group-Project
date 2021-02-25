@@ -158,14 +158,19 @@ function changeWordColor8(){
 
 $("button#word8").click(changeWordColor8);
 
-let addbtn = document.querySelector('button');
+let addbtn = document.querySelector('.userinput button');
 let input = document.querySelector('input');
 let select = document.querySelector('select');
 
-$(".userinput button").click(function() {
+addbtn.addEventListener('click', () => {
   let option = document.createElement('option');
-  option.value = input.value.toLowerCase();
   option.text = input.value;
-  select.append(option);
-  input.value='';
+  select.add(option,0);
 })
+
+/*
+let custombtn = document.querySelector('#custom');
+custombtn.addEventListener('click', () =>{
+  custombtn.innerText = option.text;
+})
+*/
