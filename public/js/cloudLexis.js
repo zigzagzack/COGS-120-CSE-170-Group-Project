@@ -14,106 +14,113 @@ function getPreparedData(){
   return {list: cleanedData};
 }
 
-var clickCount = 0;
+var clickCount1 = 0;
 function changeWordColor1(){
-  if (clickCount%2 == 0){
+  if (clickCount1%2 == 0){
     $( "button#word1" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount1 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount1%2 == 1){
     $( "button#word1" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount1 += 1;
   }
 }
 
 $("button#word1").click(changeWordColor1);
 
+var clickCount2 = 0;
 function changeWordColor2(){
-  if (clickCount%2 == 0){
+  if (clickCount2%2 == 0){
     $( "button#word2" ).css("background", "#FFC2AA");
     clickCount += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount2%2 == 1){
     $( "button#word2" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount2 += 1;
   }
 }
 
 $("button#word2").click(changeWordColor2);
 
+var clickCount3 = 0;
 function changeWordColor3(){
-  if (clickCount%2 == 0){
+  if (clickCount3%2 == 0){
     $( "button#word3" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount3 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount3%2 == 1){
     $( "button#word3" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount3 += 1;
   }
 }
 
 $("button#word3").click(changeWordColor3);
 
+var clickCount4 = 0;
 function changeWordColor4(){
-  if (clickCount%2 == 0){
+  if (clickCount4%2 == 0){
     $( "button#word4" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount4 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount4%2 == 1){
     $( "button#word4" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount4 += 1;
   }
 }
 
 $("button#word4").click(changeWordColor4);
 
+var clickCount5 = 0;
 function changeWordColor5(){
-  if (clickCount%2 == 0){
+  if (clickCount5%2 == 0){
     $( "button#word5" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount5 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount5%2 == 1){
     $( "button#word5" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount5 += 1;
   }
 }
 
 $("button#word5").click(changeWordColor5);
 
+var clickCount6 = 0;
 function changeWordColor6(){
-  if (clickCount%2 == 0){
+  if (clickCount6%2 == 0){
     $( "button#word6" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount6 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount6%2 == 1){
     $( "button#word6" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount6 += 1;
   }
 }
 
 $("button#word6").click(changeWordColor6);
 
+var clickCount7 = 0;
 function changeWordColor7(){
-  if (clickCount%2 == 0){
+  if (clickCoun7%2 == 0){
     $( "button#word7" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount7 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount7%2 == 1){
     $( "button#word7" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount7 += 1;
   }
 }
 
 $("button#word7").click(changeWordColor7);
 
+var clickCount8 = 0;
 function changeWordColor8(){
-  if (clickCount%2 == 0){
+  if (clickCount8%2 == 0){
     $( "button#word8" ).css("background", "#FFC2AA");
-    clickCount += 1;
+    clickCount8 += 1;
   }
-  else if (clickCount%2 == 1){
+  else if (clickCount8%2 == 1){
     $( "button#word8" ).css("background", "#BEE3DB");
-    clickCount += 1;
+    clickCount8 += 1;
   }
 }
 
