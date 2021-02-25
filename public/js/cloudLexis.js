@@ -14,6 +14,38 @@ function getPreparedData(){
   return {list: cleanedData};
 }
 
+/*
+let btn1 = document.querySelector('#word1');
+let btn2 = document.querySelector('#word2');
+let btn3 = document.querySelector('#word3');
+let btn4 = document.querySelector('#word4');
+let btn5 = document.querySelector('#word5');
+let btn6 = document.querySelector('#word6');
+let btn7 = document.querySelector('#word7');
+let btn8 = document.querySelector('#word8');
+
+var buttonArray = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8];
+var arrayLength = buttonArray.length;
+var clickCount = 0;
+for (var i = 0; i < arrayLength; i++) {
+  buttonArray[i].addEventListener('click', () => buttonArray[i].style.backgroundColor ='#FFC2AA')
+
+  $(buttonArray[i]).click(function() {
+    $(buttonArray[i]).css("background", "#FFC2AA");
+ 
+    if (clickCount%2 == 0){
+      $(buttonArray[i]).css("background", "#FFC2AA");
+      clickCount += 1;
+    }
+    else if (clickCount%2 == 1){
+      $(buttonArray[i]).css("background", "#BEE3DB");
+      clickCount += 1;
+    }
+  })
+}
+*/
+
+
 var clickCount1 = 0;
 function changeWordColor1(){
   if (clickCount1%2 == 0){
@@ -126,3 +158,14 @@ function changeWordColor8(){
 
 $("button#word8").click(changeWordColor8);
 
+let addbtn = document.querySelector('button');
+let input = document.querySelector('input');
+let select = document.querySelector('select');
+
+$(".userinput button").click(function() {
+  let option = document.createElement('option');
+  option.value = input.value.toLowerCase();
+  option.text = input.value;
+  select.append(option);
+  input.value='';
+})

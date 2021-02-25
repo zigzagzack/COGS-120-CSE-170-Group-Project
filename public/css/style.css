@@ -71,11 +71,7 @@
   margin-right:22%;
 }
 
-.dropdown:hover .customlist {display: block;}
-
-.dropdown:hover button#custom {background-color: #FFC2AA;}
-
-#word10{
+input{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -83,12 +79,52 @@
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #555B6E;
-  width: 130px;
+  width: 100px;
   height: 26px;
   background: #FAF9F9;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
 }
+
+.userinput button{
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  width: 30px;
+  height: 26px;
+  background: #FAF9F9;
+  border: 1px solid rgba(81, 105, 104, 0.58);
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 110px;
+  display: inline-block;
+}
+
+select{
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  padding: 5px;
+  margin: 5px;
+  width: 130px;
+}
+
+.dropdown:hover .customlist {display: block;}
+
+.dropdown:hover button#custom {background-color: #FFC2AA;}
 
 .page2-b1{
   margin: 0;
