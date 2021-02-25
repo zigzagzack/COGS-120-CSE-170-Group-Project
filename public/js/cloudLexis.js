@@ -1,3 +1,19 @@
+var dataIndexs=[];
+var cleanedData=[];
+function addToCleanedData(string){
+  index=dataIndexs.indexOf(string);
+  if(index==-1){
+    cleanedData.push([string,8]);
+    dataIndexs.push(string);
+  }else{
+    cleanedData[index][1]+=8;
+  }
+}
+
+function getPreparedData(){
+  return {list: cleanedData};
+}
+
 var clickCount = 0;
 function changeWordColor(){
   if (clickCount%2 == 0){
@@ -10,7 +26,7 @@ function changeWordColor(){
   }
 }
 
-$(".words button").click(changeWordColor);
+/*$(".words button").click(changeWordColor);*/
 
 /*
 function customToggle(){

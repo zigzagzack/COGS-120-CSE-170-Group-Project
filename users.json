@@ -1,0 +1,28 @@
+{
+	"users":[
+		{
+			"name": ""
+			"pass": ""
+			"customs": ["shook","yass","dang"]
+			"data":[
+				{
+					"date": "2-20-2021"
+					"entry": ["foo", "bar", "hurt"]
+				},{
+					"date": "2-23-2021"
+					"entry": ["foo", "bar", "calm"]
+				},  
+			]
+		},{
+			"name": "Zack"
+			"pass": "69"
+			"customs": ["yeet"]
+			"data":[
+				{
+					"date": "2-23-2021"
+					"entry": ["foo", "bar", "happy"]
+				}
+			]
+		}
+	]
+}

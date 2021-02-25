@@ -3,6 +3,7 @@
 	<title>Test Page</title>
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/wordcloud2.js"></script>
+  <script src="js/cloudLexis.js"></script>
 </head>
 
 <body>
@@ -10,17 +11,15 @@
     <a href="/home"><img src="/home.png" width="50px" height=auto></a>
   </div>
 	<p class="app-title"> Word Cloud </p>
-	<div id='my_canvas'><p style="font-size:100px;">Word Cloud</p>
+  {{#each data}}
+    <script>addToCleanedData('{{this}}')</script>
+  {{/each}}
+  <div id='my_canvas'><p style="font-size:100px;">Word Cloud</p>
 		<script>
-			WordCloud(document.getElementById('my_canvas'), { list: [['foo', 12], ['bar', 6], ['buzz', 4]]});
+			WordCloud(document.getElementById('my_canvas'), getPreparedData());
 		</script>
 	</div>
 
-
-
-  <div class='fake-word-cloud'>
-    <a href="/"><img src="/wordCloud.png" width="500px" height=auto></a>
-  </div>
   <div class="date-select">
     <p> Show me words from </p>
       <input type="date" id="start" name="start-date"
