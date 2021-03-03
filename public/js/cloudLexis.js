@@ -14,6 +14,9 @@ function getPreparedData(){
   return {list: cleanedData};
 }
 
+WordCloud.minFontSize="15px"
+WordCloud(document.getElementById('my_canvas'), getPreparedData());
+
 /*
 let btn1 = document.querySelector('#word1');
 let btn2 = document.querySelector('#word2');

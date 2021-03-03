@@ -14,10 +14,11 @@
   {{#each data}}
     <script>addToCleanedData('{{this}}')</script>
   {{/each}}
-  <div id='my_canvas'><p style="font-size:100px;">Word Cloud</p>
-		<script>
-			WordCloud(document.getElementById('my_canvas'), getPreparedData());
-		</script>
+  <canvas id="my_canvas" class="word_cloud" width="400" height="400"></canvas>
+  <div id='my_canvas' class="word_cloud" width="400" height="400">
+    <script>
+      WordCloud(document.getElementById('my_canvas'), getPreparedData());
+    </script>
 	</div>
 
   <div class="date-select">
