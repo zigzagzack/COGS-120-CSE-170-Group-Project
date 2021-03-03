@@ -41,11 +41,10 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/entry', entry.view);
 app.get('/result', result.view);
+app.get('/home/:name', home.viewAlt);
 // Example route
 // app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-
