@@ -1,0 +1,10 @@
+{
+<<<<<<< HEAD
+	"name": ["Guest"],
+	"data": ["happy","sad","stressed","stressed","stressed","productive","productive"]
+=======
+	"name": ["UserNamePulledFromJSON"],
+	"custom": ["shook", "yass", "dang"],
+	"entries": [{"date":"01/01/2000","words":["happy","sad","stressed","productive","hurt","angry","calm","tired"]}]
+>>>>>>> 30e269a6fad5a671677d7f78d494c6ac8dd3ffb8
+}
