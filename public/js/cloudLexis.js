@@ -31,8 +31,8 @@ function submiting(){
   $.post("/entry", {"date": getDate(), "words": tempData} );
 }
 
-function submitted(){
-  console.log("Success");
+function reload(){
+  console.log("noticed");
 }
 
 var tempData= ["happy","sad"];
