@@ -14,8 +14,13 @@ function getPreparedData(){
   return {list: cleanedData};
 }
 
-WordCloud.minFontSize="15px"
-WordCloud(document.getElementById('my_canvas'), getPreparedData());
+$("button#submit").click(submiting);
+
+function submiting(){
+  console.log(tempData);
+}
+
+var tempData= ["happy","sad"];
 
 /*
 let btn1 = document.querySelector('#word1');

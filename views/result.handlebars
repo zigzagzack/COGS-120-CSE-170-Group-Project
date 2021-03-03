@@ -15,11 +15,9 @@
     <script>addToCleanedData('{{this}}')</script>
   {{/each}}
   <canvas id="my_canvas" class="word_cloud" width="400" height="400"></canvas>
-  <div id='my_canvas' class="word_cloud" width="400" height="400">
-    <script>
-      WordCloud(document.getElementById('my_canvas'), getPreparedData());
-    </script>
-	</div>
+  <script>
+    WordCloud(document.getElementById('my_canvas'), getPreparedData());
+  </script>
 
   <div class="date-select">
     <p> Show me words from </p>
