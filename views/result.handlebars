@@ -11,9 +11,11 @@
     <a href="/home"><img src="/home.png" width="50px" height=auto></a>
   </div>
 	<p class="app-title"> Word Cloud </p>
-  {{#each data}}
-    <script>addToCleanedData('{{this}}')</script>
-  {{/each}}
+  {{#entries}}
+    {{#words}}
+      <script>addToCleanedData("{{this}}")</script>
+    {{/words}}
+  {{/entries}}
   <canvas id="my_canvas" class="word_cloud" width="400" height="400"></canvas>
   <script>
     WordCloud(document.getElementById('my_canvas'), getPreparedData());
@@ -22,11 +24,9 @@
   <div class="date-select">
     <p> Show me words from </p>
       <input type="date" id="start" name="start-date"
-        value="YYYY-MM-DD"
-        min="2018-01-01" max="2021-12-31"> to
+        value="YYYY-MM-DD"> to
       <input type="date" id="end" name="end-date"
-        value="YYYY-MM-DD"
-        min="2018-01-01" max="2021-12-31">
+        value="YYYY-MM-DD">
     <p class="refresh"><button onClick="window.location.reload();">Refresh</button> <button>Save Cloud</button></p>
   </div>
 </body>
