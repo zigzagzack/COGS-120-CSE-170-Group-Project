@@ -51,7 +51,6 @@ $( "#custom" ).click(function() {
     $(".customlist").show();
     $('#selection').click(function() {
       $("#custom").text($("#selection").val());
-      tempData.push($("#custom").text());
     });
   }else{
     $(".customlist").hide();
@@ -62,6 +61,9 @@ $( "#savebtn" ).click(function() {
   $(this).toggleClass( 'active' );
   if ($(this).hasClass( 'active' ) ) {
     $(".customlist").hide();
+    tempData.push($("#custom").text());
+    tempData.splice(tempData.indexOf("custom"),1);
+    tempData.splice(tempData.indexOf("save"),1);
   }else{
     $(".customlist").show();
   }
