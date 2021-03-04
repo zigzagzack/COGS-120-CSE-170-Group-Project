@@ -31,7 +31,7 @@ function submiting(){
   $.post("/entry", {"date": getDate(), "words": tempData} );
 }
 
-var tempData= ["happy","sad"];
+var tempData= [];
 
 /*
 let btn1 = document.querySelector('#word1');
@@ -70,10 +70,12 @@ function changeWordColor1(){
   if (clickCount1%2 == 0){
     $( "button#word1" ).css("background", "#FFC2AA");
     clickCount1 += 1;
+    tempData.push("happy");
   }
   else if (clickCount1%2 == 1){
     $( "button#word1" ).css("background", "#BEE3DB");
     clickCount1 += 1;
+    tempData.splice(tempData.indexOf("happy"),1);
   }
 }
 
@@ -84,10 +86,12 @@ function changeWordColor2(){
   if (clickCount2%2 == 0){
     $( "button#word2" ).css("background", "#FFC2AA");
     clickCount2 += 1;
+    tempData.push("sad");
   }
   else if (clickCount2%2 == 1){
     $( "button#word2" ).css("background", "#BEE3DB");
     clickCount2 += 1;
+    tempData.splice(tempData.indexOf("sad"),1);
   }
 }
 
@@ -98,10 +102,12 @@ function changeWordColor3(){
   if (clickCount3%2 == 0){
     $( "button#word3" ).css("background", "#FFC2AA");
     clickCount3 += 1;
+    tempData.push("stressed");
   }
   else if (clickCount3%2 == 1){
     $( "button#word3" ).css("background", "#BEE3DB");
     clickCount3 += 1;
+    tempData.splice(tempData.indexOf("stressed"),1);
   }
 }
 
@@ -112,10 +118,12 @@ function changeWordColor4(){
   if (clickCount4%2 == 0){
     $( "button#word4" ).css("background", "#FFC2AA");
     clickCount4 += 1;
+    tempData.push("productive");
   }
   else if (clickCount4%2 == 1){
     $( "button#word4" ).css("background", "#BEE3DB");
     clickCount4 += 1;
+    tempData.splice(tempData.indexOf("productive"),1);
   }
 }
 
@@ -126,10 +134,12 @@ function changeWordColor5(){
   if (clickCount5%2 == 0){
     $( "button#word5" ).css("background", "#FFC2AA");
     clickCount5 += 1;
+    tempData.push("hurt");
   }
   else if (clickCount5%2 == 1){
     $( "button#word5" ).css("background", "#BEE3DB");
     clickCount5 += 1;
+    tempData.splice(tempData.indexOf("hurt"),1);
   }
 }
 
@@ -140,10 +150,12 @@ function changeWordColor6(){
   if (clickCount6%2 == 0){
     $( "button#word6" ).css("background", "#FFC2AA");
     clickCount6 += 1;
+    tempData.push("angry");
   }
   else if (clickCount6%2 == 1){
     $( "button#word6" ).css("background", "#BEE3DB");
     clickCount6 += 1;
+    tempData.splice(tempData.indexOf("angry"),1);
   }
 }
 
@@ -154,10 +166,12 @@ function changeWordColor7(){
   if (clickCount7%2 == 0){
     $( "button#word7" ).css("background", "#FFC2AA");
     clickCount7 += 1;
+    tempData.push("calm");
   }
   else if (clickCount7%2 == 1){
     $( "button#word7" ).css("background", "#BEE3DB");
     clickCount7 += 1;
+    tempData.splice(tempData.indexOf("calm"),1);
   }
 }
 
@@ -168,10 +182,12 @@ function changeWordColor8(){
   if (clickCount8%2 == 0){
     $( "button#word8" ).css("background", "#FFC2AA");
     clickCount8 += 1;
+    tempData.push("tired");
   }
   else if (clickCount8%2 == 1){
     $( "button#word8" ).css("background", "#BEE3DB");
     clickCount8 += 1;
+    tempData.splice(tempData.indexOf("tired"),1);
   }
 }
 
