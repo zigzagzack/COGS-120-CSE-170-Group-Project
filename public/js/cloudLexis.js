@@ -34,8 +34,8 @@ function submiting(){
 var tempData= [];
 
 $(".words button").click(function() {
-  $(this).toggleClass("on");
-  if ($(this).hasClass("on")) {
+  $(this).toggleClass("select");
+  if ($(this).hasClass("select")) {
       $(this).css("background-color", "#FFC2AA");
       tempData.push($(this).text());
   }
@@ -46,17 +46,28 @@ $(".words button").click(function() {
 })
 
 $( "#custom" ).click(function() {
-  $( this ).toggleClass( 'selected' );
-  if ($( this ).hasClass( 'selected' ) ) {
+  $(this).toggleClass( 'on' );
+  if ($(this).hasClass( 'on' ) ) {
     $(".customlist").show();
-    //$("#selection").click(function() {
-      //$("#custom").text("Meow")
-        //$(this).val())
-    //});
+    $('#selection').click(function() {
+      $("#custom").text($("#selection").val());
+      tempData.push($("#custom").text());
+    });
   }else{
     $(".customlist").hide();
   }
 })
+
+$( "#savebtn" ).click(function() {
+  $(this).toggleClass( 'active' );
+  if ($(this).hasClass( 'active' ) ) {
+    $(".customlist").hide();
+  }else{
+    $(".customlist").show();
+  }
+})
+
+
 
 /*
 let addbtn = document.querySelector('.add button');
@@ -68,16 +79,10 @@ addbtn.addEventListener('click', () => {
   option.text = input.value;
   select.add(option,0);
 })
-*/
-
-/*
-var addbtn = $(".userinput button");
-var input = $('input');
-var select = $('select');
-
-$(".add button").click(function() {
-  $('option').append.text() = $('input').val();
-  $('select').add(option,0);
+var createoption= $("option").append();
+$(".add button").click(function({
+  $("option").append($("input").val());
+  $("#selection").add(($("option").append(),1));
 })
 */
 
