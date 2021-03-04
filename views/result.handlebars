@@ -29,10 +29,60 @@
       <input type="date" id="end" name="end-date"
         value="YYYY-MM-DD">
       <script>document.getElementById("end").value=new Date().toJSON().slice(0,10)</script>
-      <script>var startDate = document.getElementById('start');</script>
-      <script>startDate.addEventListener('input',reload);</script>
-      <script>var endDate = document.getElementById('end');</script>
-      <script>endDate.addEventListener('input',reload);</script>
+      <script>
+        var startDate = document.getElementById('start');
+        var endDate = document.getElementById('end');
+        startDate.addEventListener('input',replace);
+        endDate.addEventListener('input',replace);
+
+        function between(date){
+          if(parseInt(startDate.value.substring(0,4))<parseInt(date.substring(6,10))&&
+             parseInt(endDate.value.substring(0,4))>parseInt(date.substring(6,10))){
+            return true;
+          }else{
+            if(parseInt(startDate.value.substring(0,4))==parseInt(date.substring(6,10))){
+              if(parseInt(startDate.value.substring(5,7))<parseInt(date.substring(0,2))){
+                return true;
+              }else{
+                if(parseInt(startDate.value.substring(5,7))==parseInt(date.substring(0,2))){
+                  if(parseInt(startDate.value.substring(8,10))<=parseInt(date.substring(3,5))){
+                    return true;
+                  }
+                }
+              }
+            }
+            if(parseInt(endDate.value.substring(0,4))==parseInt(date.substring(6,10))){
+              if(parseInt(endDate.value.substring(5,7))>parseInt(date.substring(0,2))){
+                return true;
+              }else{
+                if(parseInt(endDate.value.substring(5,7))==parseInt(date.substring(0,2))){
+                  if(parseInt(endDate.value.substring(8,10))>=parseInt(date.substring(3,5))){
+                    return true;
+                  }
+                }
+              }
+            }
+          }
+          return false;
+        }
+
+        function replace(){
+          console.log("noticed");
+          dataIndexs=[];
+          cleanedData=[];
+          {{#entries}}
+            console.log(startDate.value);
+            console.log("{{this.date}}");
+            console.log(endDate.value);
+            if(between("{{this.date}}")){
+              {{#words}}
+                addToCleanedData("{{this}}")
+              {{/words}}
+            }
+          {{/entries}}
+          WordCloud(document.getElementById('my_canvas'), getPreparedData());
+        }
+      </script>
     <p class="refresh"><button onClick="window.location.reload();">Refresh</button> <button>Save Cloud</button></p>
   </div>
 </body>
