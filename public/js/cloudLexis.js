@@ -37,7 +37,7 @@ $(".words button").click(function() {
   $(this).toggleClass("select");
   if ($(this).hasClass("select")) {
       $(this).css("background-color", "#FFC2AA");
-      tempData.push($(this).text());
+        tempData.push($(this).text());
   }
   else {
     $(this).css("background-color", "#BEE3DB");
@@ -67,22 +67,9 @@ $( "#savebtn" ).click(function() {
   }
 })
 
-
-
-/*
-let addbtn = document.querySelector('.add button');
-let input = document.querySelector('input');
-let select = document.querySelector('select');
-
-addbtn.addEventListener('click', () => {
-  let option = document.createElement('option');
-  option.text = input.value;
-  select.add(option,0);
+$(".add button").click(function() {
+  $("input[type=text]").each(function() {
+    $("#instruction").after('<option>' + $(this).val() + '</option>');
+  })
 })
-var createoption= $("option").append();
-$(".add button").click(function({
-  $("option").append($("input").val());
-  $("#selection").add(($("option").append(),1));
-})
-*/
 
