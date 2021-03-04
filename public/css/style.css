@@ -97,7 +97,7 @@
   margin-right:22%;
 }
 
-.userinput input{
+.add input{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -114,7 +114,7 @@
   height: 26px;
 }
 
-.userinput button{
+.add button{
   position: relative;
   font-family: Roboto;
   font-style: normal;
@@ -146,10 +146,6 @@ select{
   width: 130px;
   height: 26px;
 }
-
-.dropdown:hover .customlist {display: block;}
-
-.dropdown:hover button#custom {background-color: #FFC2AA;}
 
 .page2-b1{
   margin: 0;
