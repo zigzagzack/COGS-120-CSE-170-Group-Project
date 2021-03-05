@@ -196,7 +196,7 @@ select{
 #my_canvas {
   width: auto;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;

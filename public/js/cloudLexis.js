@@ -3,10 +3,10 @@ var cleanedData=[];
 function addToCleanedData(string){
   index=dataIndexs.indexOf(string);
   if(index==-1){
-    cleanedData.push([string,8]);
+    cleanedData.push([string,25]);
     dataIndexs.push(string);
   }else{
-    cleanedData[index][1]+=8;
+    cleanedData[index][1]+=25;
   }
 }
 
@@ -75,3 +75,21 @@ $(".add button").click(function() {
   })
 })
 
+$("#saveCloud").click(saveToPDF);
+
+function saveToPDF(){
+  var imgData;
+  html2canvas($("#my_canvas"), {
+      quality: 4,
+      scale: 10,
+      useCORS: true,
+      onrendered: function (canvas) {
+          imgData = canvas.toDataURL(
+             'image/png');
+          var doc = new jsPDF('p', 'pt', 'a4');
+          doc.addImage(imgData, 'PNG', 100, 100);
+          doc.internal.scaleFactor = 1.55;
+          doc.save('sample-file.pdf');
+      }
+  });
+};
