@@ -55,6 +55,7 @@ button.guest_login{
 }
 
 .page1-b1 button{
+  width: 40%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -62,15 +63,17 @@ button.guest_login{
   text-align: center; 
   font-size:60px;
   color: #555B6E;
+  border: none;
   border-radius: 2%;
   background: #BEE3DB;
-  margin-top:40%;
+  margin-top: 10%;
   margin-left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .page1-b2 button{
+  width: 40%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -78,9 +81,10 @@ button.guest_login{
   text-align: center; 
   font-size:60px;
   color: #555B6E;
+  border: none;
   border-radius: 2%;
   background: #BEE3DB;
-  margin-top:50%;
+  margin-top:20%;
   margin-left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
