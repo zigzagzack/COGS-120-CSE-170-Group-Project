@@ -27,7 +27,7 @@ button.guest_login{
   cursor: pointer;
   padding-inline: 2px;
   margin-top: 20%;
-  margin-left: 20%
+  margin-left: 20%;
 }
 
 .guest_login:hover{
@@ -67,9 +67,11 @@ button.guest_login{
   border-radius: 2%;
   background: #BEE3DB;
   margin-top: 10%;
-  margin-left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-left: 30%;
+}
+
+.page1-b1 button:hover{
+  transform: scale(1.3);
 }
 
 .page1-b2 button{
@@ -85,9 +87,33 @@ button.guest_login{
   border-radius: 2%;
   background: #BEE3DB;
   margin-top:20%;
-  margin-left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-left: 30%;
+}
+
+.page1-b2 button:hover{
+  transform: scale(1.3);
+}
+
+p#today{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  font-size: 150px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #BEE3DB;
+}
+
+p.standardtxt{
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  text-align: center; 
+  font-size:50px;
+  color: #BEE3DB;
 }
 
 .words {
@@ -99,7 +125,7 @@ button.guest_login{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 21px;
   letter-spacing: -0.04em;
   color: #555B6E;
@@ -108,9 +134,9 @@ button.guest_login{
   border-radius: 4px;
   margin-left: 22%;
   margin-right: 22%;
-  margin-top: 22%;
-  margin-bottom: 22%;
-  padding-top: 30px;
+  margin-top: 40%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 150px;
   width: 150px;
 }
@@ -124,31 +150,61 @@ button.guest_login{
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.04em;
   color: #555B6E;
   width: 150px;
-  height: 150px;
-  background: #BEE3DB;
+  height: 230px;
+  background: #FFC2AA;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
   margin-left:22%;
   margin-right:22%;
 }
 
-.add input{
+#selection{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #555B6E;
   background: #FAF9F9;
+  width: 130px;
+  height: 40px;
+  position: relative;
+  padding: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.add input{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  background: #FAF9F9;
+  width: 130px;
+  height: 40px;
+  position: relative;
+  padding: 5px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+}
+
+button#savebtn{
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  background: #BEE3DB;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
   padding: 5px;
@@ -162,11 +218,11 @@ button.guest_login{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #555B6E;
-  background: #FFC2AA;
+  background: #BEE3DB;
   border: 1px solid rgba(81, 105, 104, 0.58);
   box-sizing: border-box;
   padding: 5px;
@@ -175,28 +231,22 @@ button.guest_login{
   height: 26px;
 }
 
-select{
-  position: relative;
+button.standardbtn {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 21px;
   letter-spacing: -0.04em;
-  color: #555B6E;
-  padding: 5px;
-  margin: 10px;
-  width: 130px;
-  height: 26px;
-}
-
-.page2-b1{
-  margin: 0;
-  position: absolute;
-  margin-top: 20px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  color: #516968;
+  width: 200px;
+  height: 50px;
+  background: #FFC2AA;
+  border-radius: 4px;
+  margin-top:10%;
+  margin-bottom: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 .home-button{
@@ -205,24 +255,28 @@ select{
   margin-right: 30px;
 }
 
-.fake-word-cloud{
-  font-size: 50px;
-  margin-top: 20px;
-  text-align: center;
-}
-
 .date-select{
   font-size: 20px;
   margin-top: 20px;
   text-align: center;
 }
 
-.side-by-side{
-  display: grid;
-	grid-template-columns: 1fr 1fr;
-  padding: 20%;
+input.standardbox{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #555B6E;
+  background: #FAF9F9;
+  border: 1px solid rgba(81, 105, 104, 0.58);
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px;
+  width: 230px;
+  height: 50px;
 }
-
 
 .textbox {
   border: 1px solid #848484;
