@@ -1,9 +1,5 @@
 {
 	"name": ["Guest"],
 	"custom": ["shook", "yass", "dang"],
-	"entries": [
-		{"date":"01/01/2000",
-			"words":["happy","sad","stressed","productive","hurt","angry","calm","tired"]
-		}
-	]
+	"entries": []
 }
