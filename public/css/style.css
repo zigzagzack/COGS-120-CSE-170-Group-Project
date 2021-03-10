@@ -27,7 +27,7 @@ button.guest_login{
   border-radius: 2%;
   cursor: pointer;
   padding-inline: 2px;
-  margin-top: 20%;
+  margin-top: 40%;
   margin-left: 19%;
 }
 
@@ -39,7 +39,16 @@ button.guest_login{
   margin-left: auto;
   margin-top: 40%;
   text-align: center;
-  transform: scale(1.8);
+}
+
+.fb-login-button{
+  display: block !important;
+  margin-left: 32% !important;
+  margin-top: 25% !important;
+  text-align: center !important;
+  transform: scale(1.8) !important;
+  position: fixed !important;
+
 }
 
 .fb_button:hover{
