@@ -26,6 +26,9 @@ function getDate(){
 }
 
 function submiting(){
+  $(".words .select").each(function(){
+    tempData.push($(this).text());
+  });
   console.log(tempData);
   console.log(getDate());
   $.post("/entry", {"date": getDate(), "words": tempData} );
@@ -37,17 +40,15 @@ $(".words button").click(function() {
   $(this).toggleClass("select");
   if ($(this).hasClass("select")) {
       $(this).css("background-color", "#FFC2AA");
-        tempData.push($(this).text());
   }
   else {
     $(this).css("background-color", "#BEE3DB");
-    tempData.splice(tempData.indexOf($(this).text()),1);
   }
 })
 
 $( "#custom" ).click(function() {
   $(this).toggleClass( 'on' );
-  if ($(this).hasClass( 'on' ) ) {
+  if ($(this).hasClass( 'on' ) & $(this).hasClass("select")) {
     $(".customlist").show();
     $('#selection').click(function() {
       $("#custom").text($("#selection").val());
@@ -58,21 +59,15 @@ $( "#custom" ).click(function() {
 })
 
 $( "#savebtn" ).click(function() {
-  $(this).toggleClass( 'active' );
-  tempData.splice(tempData.indexOf("custom"),1);
-  tempData.splice(tempData.indexOf("custom"),1);
-  tempData.splice(tempData.indexOf("add an option"),1);
-  tempData.splice(tempData.indexOf("save"),1);
-  if ($(this).hasClass( 'active' ) ) {
-    $(".customlist").hide();
-    $("#custom").toggleClass("select");
-    $("#custom").css("background-color", "#BEE3DB");
-  }else{
-    $(".customlist").show();
-  }
+  $(".customlist").hide();
+  $(this).toggleClass( 'on' );
+  $("#custom").toggleClass("select");
+  $("#custom").css("background-color", "#BEE3DB");
+  $(this).toggleClass("select");
 })
 
 $(".add button").click(function() {
+  $(this).toggleClass("select");
   $("input[type=text]").each(function() {
     $("#instruction").after('<option>' + $(this).val() + '</option>');
   })
