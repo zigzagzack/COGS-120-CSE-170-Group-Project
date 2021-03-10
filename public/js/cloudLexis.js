@@ -26,10 +26,6 @@ function getDate(){
 }
 
 function submiting(){
-  tempData.splice(tempData.indexOf("custom"),1);
-  tempData.splice(tempData.indexOf("custom"),1);
-  tempData.splice(tempData.indexOf("add an option"),1);
-  tempData.splice(tempData.indexOf("save"),1);
   console.log(tempData);
   console.log(getDate());
   $.post("/entry", {"date": getDate(), "words": tempData} );
