@@ -59,11 +59,14 @@ $( "#custom" ).click(function() {
 
 $( "#savebtn" ).click(function() {
   $(this).toggleClass( 'active' );
+  tempData.splice(tempData.indexOf("custom"),1);
+  tempData.splice(tempData.indexOf("custom"),1);
+  tempData.splice(tempData.indexOf("add an option"),1);
+  tempData.splice(tempData.indexOf("save"),1);
   if ($(this).hasClass( 'active' ) ) {
     $(".customlist").hide();
-    tempData.push($("#custom").text());
-    tempData.splice(tempData.indexOf("custom"),1);
-    tempData.splice(tempData.indexOf("save"),1);
+    $("#custom").toggleClass("select");
+    $("#custom").css("background-color", "#BEE3DB");
   }else{
     $(".customlist").show();
   }
