@@ -56,6 +56,16 @@ button.guest_login{
   color: #FFD075;
 }
 
+.error{
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  text-align: center; 
+  font-size:70px;
+  color: #FFD075;
+}
+
 .page1-b1 button{
   width: 40%;
   font-family: Roboto;

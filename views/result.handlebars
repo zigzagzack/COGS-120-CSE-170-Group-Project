@@ -20,9 +20,14 @@
     {{/words}}
   {{/entries}}
   <canvas id="my_canvas" class="word_cloud" width="400" height="300"></canvas>
-  <script>
-    WordCloud(document.getElementById('my_canvas'), getPreparedData());
-  </script>
+  {{#if entries}}
+    <script>
+      WordCloud(document.getElementById('my_canvas'), getPreparedData());
+    </script>
+  {{else}}
+    <p class="error">After you create some entires their data will be displayed here</p> 
+  {{/if}}
+  
 
   <div class="date-select">
     <p class="standardtxt"> Show me words from </p>
